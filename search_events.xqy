@@ -3,6 +3,11 @@ xquery version "1.0-ml";
  : CrimeTrack
  :
  : Copyright (c) 2009 Brad Mann. All Rights Reserved.
+ :
+ : This web service searches elements in the specified source 
+ : document and returns those that contain the search text.
+ : Its request parameters are source and search. It outputs an
+ : XHTML span and table with the results.
  :)
 
 declare namespace my = "my.function.namespace";

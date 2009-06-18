@@ -3,6 +3,10 @@ xquery version "1.0-ml";
  : CrimeTrack
  :
  : Copyright (c) 2009 Brad Mann. All Rights Reserved.
+ :
+ : This web service outputs an xml document with the current search.
+ : If no search is provided, the entire source document is returned.
+ : Its parameters are source and search.
  :)
 
 declare namespace my = "my.function.namespace";

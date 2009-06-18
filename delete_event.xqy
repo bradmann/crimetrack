@@ -3,6 +3,11 @@ xquery version "1.0-ml";
  : CrimeTrack
  :
  : Copyright (c) 2009 Brad Mann. All Rights Reserved.
+ :
+ : This web service delets an event from the specified source file.
+ : Its request parameters are source and event. After deletion,
+ : the ids of all subsequent events are decremented by 1.
+ : Returns an empty string.
  :)
 
 declare namespace evt = "my.crime.events";

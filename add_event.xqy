@@ -3,6 +3,10 @@ xquery version "1.0-ml";
  : CrimeTrack
  :
  : Copyright (c) 2009 Brad Mann. All Rights Reserved.
+ : 
+ : This web service creates a new event in the specified source file.
+ : Its request parameters are source, title, date, lat, lon, details,
+ : and tags. It returns an XHTML table row with the new event.
  :)
 
 declare namespace evt = "my.crime.events";
