@@ -3,6 +3,8 @@ xquery version "1.0-ml";
  : CrimeTrack
  :
  : Copyright (c) 2009 Brad Mann. All Rights Reserved.
+ :
+ : This is the main page for CrimeTrack and the default entry point.
  :)
 
 declare namespace evt = "my.crime.events";
@@ -28,6 +30,7 @@ xdmp:set-response-content-type("text/html; charset=utf-8")
         Source
         <select id="data_source" name="data_source">
             {
+            (: Get all the data sources in our database and display them. If there aren't any, make one! :)
             let $y := count(doc())
             let $x := if ($y < 1) then xdmp:document-insert("/default.xml", <events xmlns="my.crime.events"></events>) else ""
             let $z := if (empty(xdmp:get-session-field("source"))) then xdmp:set-session-field("source", "/default.xml") else ""

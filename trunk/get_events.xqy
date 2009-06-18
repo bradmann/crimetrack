@@ -3,6 +3,10 @@ xquery version "1.0-ml";
  : CrimeTrack
  :
  : Copyright (c) 2009 Brad Mann. All Rights Reserved.
+ :
+ : This web service gets all the events from a source document.
+ : Its request parameter is source. It outputs an XHTML span and
+ : table with the requested document data.
  :)
 
 declare namespace evt = "my.crime.events";
